@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>HTML5 MediaElement</title>
+
+<script src="/plugins/mediaelement/build/jquery.js"></script>
+<script src="/plugins/mediaelement/build/mediaelement-and-player.min.js"></script>
+
+<link rel="stylesheet" href="/plugins/mediaelement/build/mediaelementplayer.min.css" />
+
+<style>
+  .mejs-list li:hover {
+    background: #ffa;
+    cursor: pointer;
+  }
+  .mejs-list li.current {
+    background: #cddfff;
+  }
+</style>
+
+<script>
+  $(function(){
+    $('audio').mediaelementplayer({
+      success: function (mediaElement, domObject) {
+        mediaElement.addEventListener('ended', function (e) {
+          mejsPlayNext(e.target);
+          },
+          false);
+        },
+        error: function () {
+          alert('Sorry, an error has occurred. Try refreshing the page.');
+        },
+        keyActions: []
+    });
+
+    $('.mejs-list li').click(function() {
+      $(this).addClass('current').siblings().removeClass('current');
+      var audio_src = $(this).text();
+      $('audio#mejs:first').each(function(){
+        this.player.pause();
+        this.player.setSrc(audio_src);
+        this.player.play();
+      });
+    });
+  });
+
+  function mejsPlayNext(currentPlayer) {
+    if ($('.mejs-list li.current').length > 0){ // get the .current song
+      var current_item = $('.mejs-list li.current:first'); // :first is added if we have few .current classes
+      var audio_src = $(current_item).next().text();
+      $(current_item).next().addClass('current').siblings().removeClass('current');
+    }
+    else { // if there is no .current class
+      var current_item = $('.mejs-list li:first'); // get :first if we don't have .current class
+      var audio_src = $(current_item).next().text();
+      $(current_item).next().addClass('current').siblings().removeClass('current');
+    }
+
+    if( $(current_item).is(':last-child') ) { // if it is last - stop playing
+      $(current_item).removeClass('current');
+    }
+    else {
+      currentPlayer.setSrc(audio_src);
+      currentPlayer.play();
+    }
+  }
+</script>
+
+</head>
+
+<body>
+
+<audio id="mejs" src="https://s3.amazonaws.com/Stink/stink_2014_03_08_Shaskeen/stink_2014_03_08_set_1.mp3" type="audio/mp3" controls="controls"></audio>
+<ul class="mejs-list">
+    <li class="current">https://s3.amazonaws.com/Stink/stink_2014_03_08_Shaskeen/stink_2014_03_08_set_1.mp3</li>
+    <li>https://s3.amazonaws.com/Stink/stink_2014_03_08_Shaskeen/stink_2014_03_08_set_2.mp3</li>
+</ul>
+
+</body>
+</html>

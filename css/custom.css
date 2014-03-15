@@ -1,0 +1,7 @@
+  .mejs-list li:hover {
+    background: #ffa;
+    cursor: pointer;
+  }
+  .mejs-list li.current {
+    background: #cddfff;
+  }

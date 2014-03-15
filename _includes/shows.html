@@ -1,0 +1,11 @@
+<ul class="mejs-list">
+  {% for show in site.data.shows %}
+    {% if forloop.index == 1 %}
+      <audio id="mejs" src="{{show.file}}" type="audio/mp3" controls="controls"></audio>
+        <li class="current">{{show.file}}</li>
+    {% else %}
+      {{ show.show }}
+      <li>{{ show.file }}<li>
+  {% endif %}
+{% endfor %}
+</ul>

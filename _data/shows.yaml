@@ -1,0 +1,6 @@
+---
+- show: 12/1/00
+  file: https://s3.amazonaws.com/Stink/stink_2014_03_08_Shaskeen/stink_2014_03_08_set_1.mp3
+
+- show: 12/2/00
+  file: https://s3.amazonaws.com/Stink/stink_2014_03_08_Shaskeen/stink_2014_03_08_set_2.mp3
