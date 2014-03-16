@@ -1,4 +1,5 @@
 $(function(){
+  setTimeout(function(){$('.lead').slideUp('slow');},30000);
   $('audio').mediaelementplayer({
     success: function (mediaElement, domObject) {
       mediaElement.addEventListener('ended', function (e) {
