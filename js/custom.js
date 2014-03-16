@@ -6,15 +6,16 @@ $(function(){
         },
         false);
       },
-      error: function () {
-        alert('Sorry, an error has occurred. Try refreshing the page.');
-      },
-      keyActions: []
+    error: function () {
+      alert('Sorry, an error has occurred. Try refreshing the page.');
+    },
+    enableAutosize: true,
+    keyActions: []
   });
 
   $('.mejs-list li').click(function() {
     $(this).addClass('current').siblings().removeClass('current');
-    var audio_src = $(this).text();
+    var audio_src = $(this).data('file');
     $('audio#mejs:first').each(function(){
       this.player.pause();
       this.player.setSrc(audio_src);
@@ -26,12 +27,12 @@ $(function(){
 function mejsPlayNext(currentPlayer) {
   if ($('.mejs-list li.current').length > 0){ // get the .current song
     var current_item = $('.mejs-list li.current:first'); // :first is added if we have few .current classes
-    var audio_src = $(current_item).next().text();
+    var audio_src = $(current_item).next().data('file');
     $(current_item).next().addClass('current').siblings().removeClass('current');
   }
   else { // if there is no .current class
     var current_item = $('.mejs-list li:first'); // get :first if we don't have .current class
-    var audio_src = $(current_item).next().text();
+    var audio_src = $(current_item).next().data('file');
     $(current_item).next().addClass('current').siblings().removeClass('current');
   }
 
