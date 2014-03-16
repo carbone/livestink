@@ -6,6 +6,10 @@
 	background: #cddfff;
 }
 
+.mejs-controls .mejs-button button:focus {
+  outline: none;
+}
+
 @media only screen and (max-width: 480px) {
   #playlist {
     width: 480px;
