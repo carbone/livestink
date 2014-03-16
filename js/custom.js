@@ -14,7 +14,7 @@ $(function(){
     keyActions: []
   });
 
-  $('.mejs-list li').click(function() {
+  $('.mejs-list li :not a').click(function() {
     $(this).addClass('current').siblings().removeClass('current');
     var audio_src = $(this).data('file');
     $('audio#mejs:first').each(function(){
