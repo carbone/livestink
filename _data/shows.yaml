@@ -1,8 +1,110 @@
 ---
-- date: 12/1/00
-  location: 'The Shaskeen, Manchester, NH'
+- date: '3/08/14'
+  set: Set 1
+  location: 'Live at The Shaskeen, Manchester, NH'
   file: https://s3.amazonaws.com/Stink/stink_2014_03_08_Shaskeen/stink_2014_03_08_set_1.mp3
 
-- date: 12/2/00
-  location: 'The Shaskeen, Manchster, NH'
+- date: '3/08/14'
+  set: Set 2
+  location: 'Live at The Shaskeen, Manchester, NH'
   file: https://s3.amazonaws.com/Stink/stink_2014_03_08_Shaskeen/stink_2014_03_08_set_2.mp3
+
+- date: '8/25/13'
+  set: Set 1
+  location: 'Live at The Red Blazer, Concord, NH'
+  file: https://s3.amazonaws.com/Stink/stink_2013_08_25_Red_Blazer/stink_2013_08_25_set_1.mp3
+
+- date: '8/25/13'
+  set: Set 2
+  location: 'Live at The Red Blazer, Concord, NH'
+  file: https://s3.amazonaws.com/Stink/stink_2013_08_25_Red_Blazer/stink_2013_08_25_set_2.mp3
+
+- date: '3/29/13'
+  set: Set 1
+  location: 'Live at The Shaskeen, Manchester, NH'
+  file: https://s3.amazonaws.com/Stink/stink_2012_03_29_Shaskeen/stink_2013_03_29_set_1.mp3
+
+- date: '3/29/13'
+  set: Set 2
+  location: 'Live at The Shaskeen, Manchester, NH'
+  file: https://s3.amazonaws.com/Stink/stink_2012_03_29_Shaskeen/stink_2013_03_29_set_2.mp3
+
+- date: '3/09/13'
+  set: Set 1
+  location: "Acoustic at John's House, Manchester, NH"
+  file: https://s3.amazonaws.com/Stink/stink_2013_03_09_John%27s/stink_2013_03_09_set_1.mp3
+
+- date: '3/09/13'
+  set: Set 2
+  location: "Acoustic at John's House, Manchester, NH"
+  file: https://s3.amazonaws.com/Stink/stink_2013_03_09_John%27s/stink_2013_03_09_set_2.mp3
+
+- date: '8/04/13'
+  set: 4:39PM
+  location: "Stinkfest, Sandisfield, MA"
+  file: https://s3.amazonaws.com/Stink/stink_2012_08_04_Stinkfest/stink_2012_08_04_439PM.mp3
+
+- date: '8/04/13'
+  set: 8:33PM
+  location: "Stinkfest, Sandisfield, MA"
+  file: https://s3.amazonaws.com/Stink/stink_2012_08_04_Stinkfest/stink_2012_08_04_833PM.mp3
+
+- date: '8/04/13'
+  set: 9:53PM
+  location: "Stinkfest, Sandisfield, MA"
+  file: https://s3.amazonaws.com/Stink/stink_2012_08_04_Stinkfest/stink_2012_08_04_953PM.mp3
+
+- date: '8/04/13'
+  set: 11:34PM
+  location: "Stinkfest, Sandisfield, MA"
+  file: https://s3.amazonaws.com/Stink/stink_2012_08_04_Stinkfest/stink_2012_08_04_1134PM.mp3
+
+- date: '8/05/13'
+  set: 12:54AM
+  location: "Stinkfest, Sandisfield, MA"
+  file: https://s3.amazonaws.com/Stink/stink_2012_08_04_Stinkfest/stink_2012_08_05_1254AM.mp3
+
+- date: '8/05/13'
+  set: 1:11AM
+  location: "Stinkfest, Sandisfield, MA"
+  file: https://s3.amazonaws.com/Stink/stink_2012_08_04_Stinkfest/stink_2012_08_05_0111AM.mp3
+
+- date: '8/05/13'
+  set: 1:51AM
+  location: "Stinkfest, Sandisfield, MA"
+  file: https://s3.amazonaws.com/Stink/stink_2012_08_04_Stinkfest/stink_2012_08_05_0151AM.mp3
+
+- date: '8/05/13'
+  set: 2:25AM
+  location: "Stinkfest, Sandisfield, MA"
+  file: https://s3.amazonaws.com/Stink/stink_2012_08_04_Stinkfest/stink_2012_08_05_0225AM.mp3
+
+- date: '8/05/13'
+  set: 2:58AM
+  location: "Stinkfest, Sandisfield, MA"
+  file: https://s3.amazonaws.com/Stink/stink_2012_08_04_Stinkfest/stink_2012_08_05_0258AM.mp3
+
+- date: '8/05/13'
+  set: 3:23AM
+  location: "Stinkfest, Sandisfield, MA"
+  file: https://s3.amazonaws.com/Stink/stink_2012_08_04_Stinkfest/stink_2012_08_05_0323AM.mp3
+
+- date: '8/05/13'
+  set: 3:53AM
+  location: "Stinkfest, Sandisfield, MA"
+  file: https://s3.amazonaws.com/Stink/stink_2012_08_04_Stinkfest/stink_2012_08_05_0353AM.mp3
+
+- date: '8/05/13'
+  set: 4:22AM
+  location: "Stinkfest, Sandisfield, MA"
+  file: https://s3.amazonaws.com/Stink/stink_2012_08_04_Stinkfest/stink_2012_08_05_0422AM.mp3
+
+- date: '8/05/13'
+  set: 4:50AM
+  location: "Stinkfest, Sandisfield, MA"
+  file: https://s3.amazonaws.com/Stink/stink_2012_08_04_Stinkfest/stink_2012_08_05_0450AM.mp3
+
+- date: '8/05/13'
+  set: 5:00AM
+  location: "Stinkfest, Sandisfield, MA"
+  file: https://s3.amazonaws.com/Stink/stink_2012_08_04_Stinkfest/stink_2012_08_05_0500AM.mp3
