@@ -5,13 +5,15 @@
 
         <ul class="mejs-list">
           <li data-file="{{ show.file }}" class="current">
-            {{ show.date }}, {{ show.location }}, {{ show.set }}
+            {{ show.date }}, {{ show.location }}, {{ show.set }} <a download href=" {{ show.file}} " title="Download Track"><i class="fa fa-cloud-download"></i></a>
           </li>
       {% else %}
         <li data-file="{{ show.file }}">
-          {{ show.date }}, {{ show.location }}, {{ show.set }}
+          {{ show.date }}, {{ show.location }}, {{ show.set }} <a download href=" {{ show.file}} " title="Download Track"><i class="fa fa-cloud-download"></i></a>
         </li>
     {% endif %}
   {% endfor %}
   </ul>
 </div>
+
+<!--  -->
