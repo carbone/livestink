@@ -1,0 +1,45 @@
+ul.mejs-list {
+  padding-left: 0;
+  width: 625px;
+  margin-top: 25px;
+}
+
+.mejs-list li {
+  color: #999;
+  color: rgba(255,255,255,.5);
+  list-style: none;
+  list-style-type: none;
+  list-style-image: none;
+  text-align: left;
+  font-size: 120%;
+  line-height: 30px;
+}
+
+.mejs-list li.current {
+  list-style-image: url(/images/face_sm.png);
+}
+
+.mejs-list li.current,
+.mejs-list li:hover {
+  color: #fff;
+  cursor: pointer;
+}
+
+#mep_0 {
+  margin: 10px auto;
+  width: 625px !important;
+  height: 50px !important;
+}
+
+.mejs-container .mejs-controls {
+  height: 50px !important;
+  padding-top: 10px;
+}
+
+.mejs-container .mejs-controls .mejs-time span {
+  font-size: 15px;
+}
+
+.mejs-controls .mejs-button button:focus {
+  outline: none;
+}
