@@ -15,6 +15,19 @@ ul.mejs-list {
   line-height: 30px;
 }
 
+.mejs-list li.current a i,
+.mejs-list li:hover a i {
+  display: inline;
+}
+
+.mejs-list li:hover a {
+  text-decoration: none;
+}
+
+.mejs-list li a i {
+  display: none;
+}
+
 .mejs-list li.current {
   list-style-image: url(/images/face_sm.png);
 }
