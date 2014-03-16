@@ -86,3 +86,7 @@ body {
 .cover-container {
   width: 625px;
 }
+
+.mastfoot a i.fa-github {
+  font-size: 18px;
+}
