@@ -2,10 +2,14 @@
   <ul class="mejs-list">
     {% for show in site.data.shows %}
       {% if forloop.index == 1 %}
-        <audio id="mejs" src="{{show.file}}" type="audio/mp3" controls="controls"></audio>
-        <li class="current">{{ show.date }} {{ show.location }}</li>
+        <audio id="mejs" src="{{ show.file }}" type="audio/mp3" controls="controls"></audio>
+        <li data-file="{{ show.file }}" class="current">
+          {{ show.location }}, {{ show.date }}, {{ show.set }}
+        </li>
       {% else %}
-        <li>{{ show.date }} {{ show.location }}</li>
+        <li data-file="{{ show.file }}">
+          {{ show.location }}, {{ show.date }}, {{ show.set }}
+        </li>
     {% endif %}
   {% endfor %}
   </ul>
