@@ -1,7 +1,25 @@
-  .mejs-list li:hover {
-    background: #ffa;
-    cursor: pointer;
+.mejs-list li:hover {
+	background: #ffa;
+	cursor: pointer;
+}
+.mejs-list li.current {
+	background: #cddfff;
+}
+
+@media only screen and (max-width: 480px) {
+  #playlist {
+    width: 480px;
   }
-  .mejs-list li.current {
-    background: #cddfff;
+  #mep_0 {
+    width: 480px !important;
   }
+}
+
+@media only screen and (min-width : 1224px) {
+  #playlist {
+    width: 630px;
+  }
+  #mep_0 {
+    width: 630px !important;
+  }
+}
