@@ -2,18 +2,15 @@
     {% for show in site.data.shows %}
       {% if forloop.index == 1 %}
         <audio id="mejs" src="{{ show.file }}" type="audio/mp3" controls="controls"></audio>
-
         <ul class="mejs-list">
           <li data-file="{{ show.file }}" class="current">
-            {{ show.date }}, {{ show.location }}, {{ show.set }} <a download href=" {{ show.file}} " title="Download Track"><i class="fa fa-cloud-download"></i></a>
+            {{ show.date }}, {{ show.location }}, {{ show.set }} <a download href="{{ show.file}}" title="Download Track"><i class="fa fa-cloud-download"></i></a>
           </li>
       {% else %}
         <li data-file="{{ show.file }}">
-          {{ show.date }}, {{ show.location }}, {{ show.set }} <a download href=" {{ show.file}} " title="Download Track"><i class="fa fa-cloud-download"></i></a>
+          {{ show.date }}, {{ show.location }}, {{ show.set }} <a download href="{{ show.file}}" title="Download Track"><i class="fa fa-cloud-download"></i></a>
         </li>
     {% endif %}
   {% endfor %}
   </ul>
 </div>
-
-<!--  -->
