@@ -1,4 +1,5 @@
 $(function(){
+
   setTimeout(function(){$('.lead').slideUp('slow');},30000);
   $('audio').mediaelementplayer({
     success: function (mediaElement, domObject) {
@@ -14,14 +15,21 @@ $(function(){
     keyActions: []
   });
 
-  $('.mejs-list li').click(function() {
-    $(this).addClass('current').siblings().removeClass('current');
-    var audio_src = $(this).data('file');
-    $('audio#mejs:first').each(function(){
-      this.player.pause();
-      this.player.setSrc(audio_src);
-      this.player.play();
-    });
+  $('.mejs-list li').click(function(event){
+    // Don't mess with the player if they're downloading something
+    if (event.target.nodeName != 'I' && !$(event.target).hasClass('fa-cloud-download')) {
+      // Otherwise, swap out the track in the player for whatever they clicked on.
+      $(this).addClass('current').siblings().removeClass('current');
+      var audio_src = $(this).data('file');
+      $('audio#mejs:first').each(function(){
+        this.player.pause();
+        this.player.setSrc(audio_src);
+        this.player.play();
+      });
+    }
+    else {
+      $(this).addClass('downloaded');
+    }
   });
 });
 
