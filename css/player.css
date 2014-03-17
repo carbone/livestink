@@ -16,7 +16,8 @@ ul.mejs-list {
 }
 
 .mejs-list li.current a i,
-.mejs-list li:hover a i {
+.mejs-list li:hover a i,
+.mejs-list li.downloaded i {
   display: inline;
 }
 
@@ -36,6 +37,19 @@ ul.mejs-list {
 .mejs-list li:hover {
   color: #fff;
   cursor: pointer;
+}
+
+.mejs-list li.downloaded {
+  font-style: italic;
+  opacity: 0.5;
+}
+
+.mejs-list li.downloaded i {
+  display: inline;
+}
+
+.mejs-list li.downloaded.current {
+  opacity: 1;
 }
 
 #mep_0 {
