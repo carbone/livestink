@@ -1,4 +1,19 @@
 ---
+- date: '11/07/14'
+  set: Set 1
+  location: 'The Shaskeen, Manchester, NH'
+  file: https://s3.amazonaws.com/Stink/stink_2014_11_07_Shaskeen/stink_2014_11_07_set_1.mp3
+
+- date: '11/07/14'
+  set: Set 2a
+  location: 'The Shaskeen, Manchester, NH'
+  file: https://s3.amazonaws.com/Stink/stink_2014_11_07_Shaskeen/stink_2014_11_07_set_2a.mp3
+
+- date: '11/07/14'
+  set: Set 2b
+  location: 'The Shaskeen, Manchester, NH'
+  file: https://s3.amazonaws.com/Stink/stink_2014_11_07_Shaskeen/stink_2014_11_07_set_2b.mp3
+
 - date: '3/08/14'
   set: Set 1
   location: 'The Shaskeen, Manchester, NH'
